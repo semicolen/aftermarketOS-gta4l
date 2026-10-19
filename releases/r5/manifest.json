@@ -98,5 +98,8 @@
   "preserves_headless_image": true,
   "formats_or_repartitions": false,
   "distribution": "r5-public",
-  "physical_boot_scope": "r5 base with private data migration; exact public derivative checked offline"
+  "physical_boot_scope": "r5 base with private data migration; exact public derivative checked offline",
+  "release_asset_name_map": {
+    "bubblewrap_0.12.0-1~deb13u1+debport1_arm64.deb": "bubblewrap_0.12.0-1.deb13u1+debport1_arm64.deb"
+  }
 }

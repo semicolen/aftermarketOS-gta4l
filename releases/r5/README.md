@@ -76,4 +76,8 @@ can disconnect intermittently.
 
 Stock firmware/runtime retains its original Samsung/Qualcomm terms. No user
 media, saved network profiles, modem NV storage, personal calibration, device
-serial, private keys or raw device backups are release assets.
+serial, private keys or user-filesystem/recovery/NV backups are release assets.
+
+GitHub replaces `~` in asset filenames. The downloadable Bubblewrap package
+uses `1.deb13u1` in its filename; its actual dpkg version remains
+`0.12.0-1~deb13u1+debport1`. Checksums use the hosted filename.
