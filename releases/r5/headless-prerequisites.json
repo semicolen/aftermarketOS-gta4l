@@ -1,0 +1,7 @@
+{
+  "expected_full_boot_after_sha256": "a958939a7ea3adedd9a3d1a5d6156eb8406a50359477b1dd57e20352d76bd3ee",
+  "original_full_boot_sha256": "2834eb30996e647110f2c1f767edb2003b3080cddb0729beaf9d5e6c106b94a0",
+  "recovery_sha256": "5d427f6f7ac3fd61b9f0d5aad21ef7404464ab3ed6f8b972151149b52552ad98",
+  "userdata_mbr_sha256": "caa45bcb7793964815a2fdb812bfc72addbd51ab8ab1b790dd57ebf94b908c62",
+  "recovery_runtime_sha256": "50a2ba5e5a2a4c376d56379d9424c383580b88c5a3c609d0287da205c893fb5d"
+}

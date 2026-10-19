@@ -1,0 +1,29 @@
+--- a/panels/system/about/cc-system-details-window.c
++++ b/panels/system/about/cc-system-details-window.c
+@@ -132,6 +132,26 @@
+         envp = g_environ_setenv (envp, env_vars[i], value, TRUE);
+     }
+ 
++  /* This downstream KGSL session selects a private Zink/Turnip stack.
++   * Dropping its loader configuration probes the system llvmpipe fallback
++   * instead. Keep the explicit session configuration for the real query;
++   * retain the usual isolated environment for every other session.
++   * GTK must also use the session's tested GL presentation path.
++   */
++  if (g_strcmp0 (g_getenv ("GTA4L_ZINK_KGSL"), "1") == 0) {
++      static const char *kgsl_env_vars[] = {
++          "GTA4L_ZINK_KGSL", "LD_LIBRARY_PATH", "LIBGL_DRIVERS_PATH",
++          "GALLIUM_DRIVER", "MESA_LOADER_DRIVER_OVERRIDE", "VK_DRIVER_FILES",
++          "LIBGL_KOPPER_DISABLE", "LIBGL_ALWAYS_SOFTWARE", "GSK_RENDERER"
++      };
++
++      for (i = 0; i < G_N_ELEMENTS (kgsl_env_vars); i++) {
++          const char *value = g_getenv (kgsl_env_vars[i]);
++          if (value)
++              envp = g_environ_setenv (envp, kgsl_env_vars[i], value, TRUE);
++      }
++  }
++
+   g_debug ("About to launch '%s'", argv[0]);
+ 
+   if (env != NULL)

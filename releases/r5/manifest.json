@@ -1,0 +1,102 @@
+{
+  "device": "SM-T505",
+  "desktop": "gnome",
+  "device_boot_tested": false,
+  "kernel_unchanged": true,
+  "dtb_unchanged": true,
+  "rootfs": {
+    "image_sha256": "4a5e3daaaf1fdc75bc4a765c8acd5997045765909ebc36611cfe11201cda90be",
+    "image_bytes": 6442450944,
+    "identity": {
+      "device": "samsung-gta4l",
+      "status": "gnome-device-preview",
+      "desktop": "gnome",
+      "hardware_tested": false,
+      "headless_predecessor_boot_verified": true,
+      "ssh": "key-only-no-authorized-keys",
+      "root_password": "locked",
+      "local_login": "postmarketos-prebuilt-defaults",
+      "username": "user",
+      "auto_login": "user",
+      "login_defaults_source": "https://postmarketos.org/download/",
+      "distribution": "r5-public"
+    },
+    "kernel": "4.19.300-perf #11-postmarketOS",
+    "modules": 37,
+    "device_boot_tested": false,
+    "device_package": "debport-gta4l-gnome_0.1.4_arm64.deb",
+    "device_package_sha256": "19a65707029a26cc7e060926f5cf92098b441aa85e55d33d6bb4262a373321e1",
+    "bubblewrap_compat_package": "bubblewrap_0.12.0-1~deb13u1+debport1_arm64.deb",
+    "bubblewrap_compat_sha256": "1fabbe43099a58ebdecd23ae9c013e601f6a8ea98de0dfcbb33e3a7f85bbdd04",
+    "login_verification": {
+      "username": "user",
+      "uid": 1000,
+      "gid": 1000,
+      "password_hash_verified": true,
+      "desktop_groups_verified": true,
+      "home_and_ssh_permissions_verified": true,
+      "gdm_auto_login": "user",
+      "root_locked": true,
+      "defaults_source": "https://postmarketos.org/download/",
+      "authorized_keys_present": false
+    },
+    "public_derivative_of": "r5",
+    "development_ssh_access_removed": true
+  },
+  "boot_sha256": "0d9a31203f3b3742ac49ad34c68e10d8ec9c650465883ae3736b39b20ebaa278",
+  "expected_full_boot_after_sha256": "5b493c01d417a4a8a9b4ebf4ecc3e3ddffa7ccc0541c9b3671598d563cefa271",
+  "previous_full_boot_sha256": "a958939a7ea3adedd9a3d1a5d6156eb8406a50359477b1dd57e20352d76bd3ee",
+  "recovery_sha256": "5d427f6f7ac3fd61b9f0d5aad21ef7404464ab3ed6f8b972151149b52552ad98",
+  "userdata_mbr_sha256": "caa45bcb7793964815a2fdb812bfc72addbd51ab8ab1b790dd57ebf94b908c62",
+  "rootfs_chunks": [
+    {
+      "entry": "rootfs/000.ext4",
+      "bytes": 805306368,
+      "sha256": "cad7ce8873da2a5b9dcd702aaffbdc85419becc47af0f269b0841a5b8b889c4b"
+    },
+    {
+      "entry": "rootfs/001.ext4",
+      "bytes": 805306368,
+      "sha256": "df196ea403322abde2d9999b817f7b79e1b7eea65e0628d053f9bc30924ede49"
+    },
+    {
+      "entry": "rootfs/002.ext4",
+      "bytes": 805306368,
+      "sha256": "47805ff26941c0f4ed2cce0cf2279c8eb429613de04ae9096056525a30471cab"
+    },
+    {
+      "entry": "rootfs/003.ext4",
+      "bytes": 805306368,
+      "sha256": "f530bea6040b0cce7a9f266c37ad963bd0f275d9c383c0affbd20b8d8a3aabbc"
+    },
+    {
+      "entry": "rootfs/004.ext4",
+      "bytes": 805306368,
+      "sha256": "95c847516abea4cf115ea44b58313579587417948a90ec1389a50f98414a5326"
+    },
+    {
+      "entry": "rootfs/005.ext4",
+      "bytes": 805306368,
+      "sha256": "a1610f0623f2221148d19401414893514f71fc20bd230f2cd9d7a73edd938ce1"
+    },
+    {
+      "entry": "rootfs/006.ext4",
+      "bytes": 805306368,
+      "sha256": "d8492a624b5ded59e8a2185b0755f195a58642456e8387ba2817e46f1e05b358"
+    },
+    {
+      "entry": "rootfs/007.ext4",
+      "bytes": 805306368,
+      "sha256": "d8492a624b5ded59e8a2185b0755f195a58642456e8387ba2817e46f1e05b358"
+    }
+  ],
+  "installer": "aftermarketOS-gta4l-GNOME-r5-public.zip",
+  "installer_bytes": 1023885521,
+  "installer_sha256": "edfd38798312b3564c222b39bf2d777e3e6ac0a648f09e20fe19bac3768f33c9",
+  "rollback": "SM-T505-restore-working-headless-Debian.zip",
+  "rollback_sha256": "568c524bb008f6b59820576c7b083706770120bffa1855a5f2ff84d3fa109be7",
+  "preserves_headless_image": true,
+  "formats_or_repartitions": false,
+  "distribution": "r5-public",
+  "physical_boot_scope": "r5 base with private data migration; exact public derivative checked offline"
+}

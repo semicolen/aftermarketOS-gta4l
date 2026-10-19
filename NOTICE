@@ -1,0 +1,12 @@
+Original Debian integration: semicolen, 2026.
+Device port: https://github.com/semicolen/2gta4l at
+ea1134e326e667d7c575670766dd9b9b5fd0077c.
+Kernel: LineageOS/android_kernel_samsung_sm6115 at
+381a5549ee66fa751f632ee0840f5631274209ee, GPL-2.0-only, with the pinned
+port's patches and config. Third-party patches, sources and firmware retain
+their original licenses. No blanket license is asserted for firmware blobs.
+Stock camera, sensor and radio runtime originates from SM-T505 T505XXS8CXG1.
+Personal persist calibration, modem NV storage and user data are excluded.
+
+The MIT license applies to original integration code. Third-party files
+retain their original licenses; see source headers and upstream notices.

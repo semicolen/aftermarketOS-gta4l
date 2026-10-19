@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-10-19T18:20:04.398387+00:00",
+  "filesystem_check": "e2fsck -f -n passed",
+  "native_userspace": [
+    "GNOME Shell 48.7",
+    "Bubblewrap 0.12.0",
+    "dpkg audit clean"
+  ],
+  "device_and_desktop_unit_validation": "systemd-analyze verify passed",
+  "public_tree_personal_state_checks": "passed; home allowlist and empty network/Bluetooth/camera runtime state",
+  "development_authorized_key": "removed",
+  "ssh_host_keys": "absent",
+  "machine_id": "absent",
+  "zip_crc": "passed",
+  "reconstructed_rootfs_sha256": "4a5e3daaaf1fdc75bc4a765c8acd5997045765909ebc36611cfe11201cda90be",
+  "all_eight_chunk_checksums": "passed",
+  "device_boot_tested": false,
+  "physical_boot_reference": "r5 base with privately migrated data; user confirmed GNOME desktop"
+}

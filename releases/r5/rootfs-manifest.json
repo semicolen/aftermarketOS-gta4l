@@ -1,0 +1,39 @@
+{
+  "image_sha256": "4a5e3daaaf1fdc75bc4a765c8acd5997045765909ebc36611cfe11201cda90be",
+  "image_bytes": 6442450944,
+  "identity": {
+    "device": "samsung-gta4l",
+    "status": "gnome-device-preview",
+    "desktop": "gnome",
+    "hardware_tested": false,
+    "headless_predecessor_boot_verified": true,
+    "ssh": "key-only-no-authorized-keys",
+    "root_password": "locked",
+    "local_login": "postmarketos-prebuilt-defaults",
+    "username": "user",
+    "auto_login": "user",
+    "login_defaults_source": "https://postmarketos.org/download/",
+    "distribution": "r5-public"
+  },
+  "kernel": "4.19.300-perf #11-postmarketOS",
+  "modules": 37,
+  "device_boot_tested": false,
+  "device_package": "debport-gta4l-gnome_0.1.4_arm64.deb",
+  "device_package_sha256": "19a65707029a26cc7e060926f5cf92098b441aa85e55d33d6bb4262a373321e1",
+  "bubblewrap_compat_package": "bubblewrap_0.12.0-1~deb13u1+debport1_arm64.deb",
+  "bubblewrap_compat_sha256": "1fabbe43099a58ebdecd23ae9c013e601f6a8ea98de0dfcbb33e3a7f85bbdd04",
+  "login_verification": {
+    "username": "user",
+    "uid": 1000,
+    "gid": 1000,
+    "password_hash_verified": true,
+    "desktop_groups_verified": true,
+    "home_and_ssh_permissions_verified": true,
+    "gdm_auto_login": "user",
+    "root_locked": true,
+    "defaults_source": "https://postmarketos.org/download/",
+    "authorized_keys_present": false
+  },
+  "public_derivative_of": "r5",
+  "development_ssh_access_removed": true
+}

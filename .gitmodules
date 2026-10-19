@@ -1,0 +1,6 @@
+[submodule "upstream-port"]
+	path = upstream/2gta4l
+	url = https://github.com/semicolen/2gta4l.git
+[submodule "shared-builder"]
+	path = builder
+	url = https://github.com/semicolen/aftermarketOS.git

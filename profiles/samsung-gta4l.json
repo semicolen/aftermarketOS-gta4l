@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "samsung-gta4l",
+  "name": "Samsung Galaxy Tab A7 LTE (SM-T505)",
+  "architecture": "arm64",
+  "suite": "trixie",
+  "mirror": "https://deb.debian.org/debian",
+  "packages": ["systemd-sysv", "dbus", "udev", "kmod", "ca-certificates", "iproute2", "openssh-server"],
+  "status": "rootfs-only",
+  "hardware_support": "not-ported-to-debian",
+  "source": {
+    "url": "https://github.com/semicolen/2gta4l",
+    "revision": "ea1134e326e667d7c575670766dd9b9b5fd0077c",
+    "deviceinfo": "port/device-samsung-gta4l/deviceinfo",
+    "kernel_revision": "381a5549ee66fa751f632ee0840f5631274209ee",
+    "kernel_version": "4.19.300"
+  },
+  "boot": {
+    "format": "android",
+    "header_version": 2,
+    "page_size": 4096,
+    "base": "0x00000000",
+    "kernel_offset": "0x00008000",
+    "ramdisk_offset": "0x02000000",
+    "second_offset": "0x00f00000",
+    "tags_offset": "0x01e00000",
+    "dtb_offset": "0x01f00000",
+    "dtb": "qcom/gta4l",
+    "append_dtb": false,
+    "custom_args": "--board SRPTC24A008",
+    "append_seandroidenforce": true,
+    "kernel_cmdline": "console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90000 androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 firmware_class.path=/lib/firmware/postmarketos audit=0"
+  },
+  "requirements": [
+    "Build or explicitly supply the patched device kernel, DTBs and exactly matching modules.",
+    "Supply matching stock firmware, including early touchscreen firmware; it is absent from the public source repository.",
+    "Port the Qualcomm subsystem, QRTR, PD mapper, WLAN, Bluetooth, audio, modem and sensor startup services to Debian.",
+    "Rebuild the private KGSL Turnip and patched Zink libraries against glibc before enabling an accelerated desktop.",
+    "Provide and test initramfs root discovery and Samsung Android v2 boot packaging.",
+    "Audit kernel configuration and systemd service restrictions on Linux 4.19.",
+    "Revalidate all hardware on Debian; upstream postmarketOS results do not establish Debian functionality."
+  ]
+}

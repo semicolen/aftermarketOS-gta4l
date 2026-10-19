@@ -1,0 +1,2 @@
+# The downstream msm_sharedmem UIO driver exposes the modem RMTFS window.
+SUBSYSTEM=="uio", KERNEL=="uio[0-9]*", ATTR{name}=="rmtfs", SYMLINK+="qcom_rmtfs_uio1", OWNER="root", GROUP="root", MODE="0600"

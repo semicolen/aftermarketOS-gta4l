@@ -1,0 +1,65 @@
+{
+  "port_revision": "ea1134e326e667d7c575670766dd9b9b5fd0077c",
+  "sources": [
+    {
+      "package": "qrtr-ns-gta4l",
+      "file": "qrtr-v1.2.tar.gz",
+      "url": "https://github.com/linux-msm/qrtr/archive/v1.2/qrtr-v1.2.tar.gz",
+      "sha512": "aec1dfc598a70f0128d81a56faab74a2a7676dc0c4ff2e858f76aaf815afb5b785af0cf18427212f92aec3c61297af3f94a64671ec5e161c4a340d2edcfaabdd"
+    },
+    {
+      "package": "pd-mapper-gta4l",
+      "file": "pd-mapper-v1.1.tar.gz",
+      "url": "https://github.com/linux-msm/pd-mapper/archive/v1.1/pd-mapper-v1.1.tar.gz",
+      "sha512": "d870933f1000adf6701d5dde29bc528aa9a60686179cf696322bf0663833c5ed7a085882c79aa8cd4231baba3906299da1c0160c118c163ea4b2954a0e19e9cc"
+    },
+    {
+      "package": "tqftpserv-gta4l",
+      "file": "tqftpserv-v1.2.tar.gz",
+      "url": "https://github.com/linux-msm/tqftpserv/archive/refs/tags/v1.2.tar.gz",
+      "sha512": "d940aa8c48d20df893b633a870829a42506374c01591ff01c38e7aeb763ed80eb94b647ce72a6e252b41fdf3197b72840c9a23b3552a65ff4a2b140e1d79da19"
+    },
+    {
+      "package": "hexagonrpc-gta4l",
+      "file": "hexagonrpc-da7a3742ab8d5273a281b70ee11f16fb2cb6a690.tar.gz",
+      "url": "https://github.com/linux-msm/hexagonrpc/archive/da7a3742ab8d5273a281b70ee11f16fb2cb6a690.tar.gz",
+      "sha512": "866ffde3110d3744cd6ea0dd4b965e640e293e21a77cd3767ba770515ed09dda11667d70f806d4fedad283d7e38671c2d455b6c612b7225a038930d3eac5bc2c"
+    },
+    {
+      "package": "libssc",
+      "file": "libssc-0.4.4.tar.gz",
+      "url": "https://codeberg.org/DylanVanAssche/libssc/archive/v0.4.4.tar.gz",
+      "sha512": "6b7ec092c645af7210b3fc7c7e3ca48a5d7d74d2b787c103d30de6ca9d64c30479d75e9364d369944dc8b9ac9b4caeb6a9dea4641997aad40ab47fbc41224604"
+    },
+    {
+      "package": "iio-sensor-proxy",
+      "file": "iio-sensor-proxy-3.9.tar.gz",
+      "url": "https://gitlab.freedesktop.org/hadess/iio-sensor-proxy/-/archive/3.9/iio-sensor-proxy-3.9.tar.gz",
+      "sha512": "a89c842f8db2a1a36c1c7c990434bb57fd905224459170cba2ec56e79f1272acc4cac4221937704d5e9247f957d86fde716d25e2d1ccb80d88fa643b47edfda6"
+    },
+    {
+      "package": "mesa-zink-kgsl-gta4l",
+      "file": "mesa-26.0.8.tar.xz",
+      "url": "https://mesa.freedesktop.org/archive/mesa-26.0.8.tar.xz",
+      "sha512": "3a43648a86c1bc48161a1669733b6c6a9294bf27ffb529f2ce078c2daa3b90b8c53b9cc06312197fb3a0830303d0b326d7535fb15849e6c26fad58009f3a6112"
+    },
+    {
+      "package": "mesa-vulkan-kgsl-gta4l",
+      "file": "mesa-26.2.4.tar.xz",
+      "url": "https://mesa.freedesktop.org/archive/mesa-26.2.4.tar.xz",
+      "sha512": "42e793561661a567e72c7324d071ab9f82d3a9f1e000827ed989b8d5fcc2cd16e50c02808d43465b3135c25a3cad77649ba0bf9e35d95b848f8fc8d8b9ce327c"
+    },
+    {
+      "package": "modemmanager",
+      "file": "ModemManager-7f0bf17ab518cd78925cf7e53cc0d5c42f88b41a.tar.gz",
+      "url": "https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/7f0bf17ab518cd78925cf7e53cc0d5c42f88b41a/ModemManager-7f0bf17ab518cd78925cf7e53cc0d5c42f88b41a.tar.gz",
+      "sha512": "e049eecc104c989f516402ca7c21e3374c152e3840cf05c34ac91bc8e3305c83b53693bc0964f657664d4156baaac1a4e0fa35dd577733623dd669b67f1675f6"
+    },
+    {
+      "package": "bubblewrap-gta4l",
+      "file": "bubblewrap-0.13.0.tar.gz",
+      "url": "https://github.com/containers/bubblewrap/archive/v0.13.0.tar.gz",
+      "sha512": "33091ca27e6abe7e1136e1c96a350b3953e030e7bd38c22aab04ad13cfc5d6c913580b98150bfe635af0391a201b154dc0828d99e0af5ab198ffb90cc92680c2"
+    }
+  ]
+}

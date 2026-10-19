@@ -1,0 +1,11 @@
+[Unit]
+Description=SM-T505 temporary modem bring-up with read-only NV storage
+Requires=gta4l-qrtr.service gta4l-pd-mapper.service gta4l-tqftpserv.service gta4l-rmtfs-preflight.service
+After=gta4l-qrtr.service gta4l-pd-mapper.service gta4l-tqftpserv.service gta4l-rmtfs-preflight.service
+
+[Service]
+Type=exec
+Environment=LD_LIBRARY_PATH=/usr/lib/debport-device/lib
+ExecStartPre=/usr/libexec/gta4l-modem-preflight --rmtfs-unit gta4l-rmtfs-preflight.service
+ExecStart=/usr/lib/debport-device/bin/gta4l-subsystem /dev/subsys_modem
+TimeoutStartSec=45

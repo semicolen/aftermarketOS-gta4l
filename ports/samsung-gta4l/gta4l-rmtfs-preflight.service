@@ -1,0 +1,13 @@
+[Unit]
+Description=SM-T505 read-only modem storage bring-up
+Requires=gta4l-qrtr.service
+After=gta4l-qrtr.service systemd-udev-trigger.service
+
+[Service]
+Type=exec
+Environment=LD_LIBRARY_PATH=/usr/lib/debport-device/lib
+ExecStartPre=/usr/libexec/gta4l-rmtfs-ready
+ExecStart=/usr/bin/rmtfs -P -r
+ExecStartPost=/usr/libexec/gta4l-rmtfs-ready --wait $MAINPID
+TimeoutStartSec=45
+KillSignal=SIGINT
